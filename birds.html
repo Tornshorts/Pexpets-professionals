@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Birds</title>
+</head>
+
+<style>
+      body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    }
+
+header {
+    background-color: #adadad;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    background-color:#003B6D;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo img{
+    height: 59px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+nav ul a:hover{
+    color:#6699CC;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .submenu li {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul .submenu a {
+    color: #333; 
+}
+nav ul .submenu {
+        display: none;
+        position: absolute;
+        background-color: #fff; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        border-radius: 5px; 
+    }
+nav ul .submenu li {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav ul .submenu a {
+        color: #ffffff; 
+        display: block;
+        padding: 10px; 
+        background-color: #003B6D;
+        transition: background-color 0.3s;
+    }
+
+    nav ul .submenu a:hover {
+        background-color: #6699CC; 
+        border-radius: 5px;
+        color: #fff; 
+    }
+nav ul .submenu a:hover {
+    background-color: #6699CC; 
+    color: #fff; 
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #003B6D;
+}
+.search button:hover{
+    transform: translateY(-5px);
+    background-color: #6699CC;
+}
+
+.search input {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border-top: none;
+}
+
+.search button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sign-in a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.sign-in a:hover{
+    background-color: #6699CC;
+}
+.introduction img{
+    height: 200px;
+    margin-left: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.introduction img:hover{
+    transform: translateY(-10px);
+}
+.container{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.container h2{
+    text-align: center;
+}
+
+    nav a.active {
+        color: #6699CC;
+    }
+</style>
+
+<body>
+    <div class="breadcrumbs">
+        <a href="birds.html">Birds</a> > <span>Current Page</span>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="Pictures/logo2.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html" >Home <ul class="sub-menu">
+                    <ul class="submenu">
+                        <li><a href="#product1">Paradigm Pet Professionals</a></li>
+                        <li><a href="#product2">Services</a></li>
+                        <li><a href="#product3">Adoption Resources</a></li>
+                    </ul>
+                </ul></a></li>
+                <li><a href="cat.html">Cat 
+                    <ul class="submenu">
+                        <li><a href="#producta">Introduction</a></li>
+                        <li><a href="#productb">Diet</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="dog.html">Dog  <ul class="submenu">
+                    <li><a href="#product11">Introduction</a></li>
+                    <li><a href="#product22">Diet & Grooming</a></li>
+                    <li><a href="#product44">Grooming & Handling</a></li>
+                    <li><a href="#product33">Vaccinations & Medications</a></li>
+                </ul></a></li>
+                <li><a href="birds.html" class="active">Birds
+                    <ul class="submenu">
+                        <li><a href="#productaa">About Birds</a></li>
+                        <li><a href="#productbb">Bird Depression
+                        </a></li>
+                    </ul>
+                </a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </div>
+        <div class="sign-in">
+            <a href="registrtration.html">contact</a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="introduction">
+            <h2 id="productaa">About Birds</h2>
+            <p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't</p>
+           <img src="Pictures/bird1.jpg" alt=""> 
+
+        </div>
+        <div class="Bird depression">
+            <h2 id="productbb">Bird Depression</h2>
+            <p>
+                Birds are amazing and each breed is unique in its own way, particularly when it comes to their relational needs and well-being. Unfortunately, birds can experience sadness and depression just like humans
+           </p>
+
+        </div>
+        <div class="causes">
+            <h5><u>(a). Causes of Depression</u></h5>
+            <p>
+                A number of root causes may be responsible for your bird's depression such as an illness (either physical or mental), losing its companion, or increasingly becoming bored.
+            </p>
+
+        </div>
+        <div class="signs">
+            <h5><u>(b). Identifying signs of depression</u></h5>
+           <ul>
+                <li>reduced appetite</li>
+                <li>becoming increasingly irritable</li>
+                <li>aggressive behavior</li>
+                <li>songs have a different, more solemn tone </li>
+            </ul>
+            <p>Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating the symptoms earlier may drastically increase the lifespan of your birdie</p>
+        </div>
+    </div>
+</body>
+
+</html>

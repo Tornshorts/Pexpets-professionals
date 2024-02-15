@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration</title>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    header {
+        background-color: #adadad;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        background-color: #003B6D;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .logo img {
+        height: 59px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    nav ul a:hover {
+        color: #6699CC;
+        transform: translateY(-10px);
+    }
+    nav ul .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+nav ul .submenu li {
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul .submenu a {
+    color: #333; 
+}
+nav ul .submenu {
+        display: none;
+        position: absolute;
+        background-color: #fff; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        border-radius: 5px; 
+    }
+nav ul .submenu li {
+        margin: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    nav ul .submenu a {
+        color: #ffffff; 
+        display: block;
+        padding: 10px; 
+        background-color: #003B6D;
+        transition: background-color 0.3s;
+    }
+
+    nav ul .submenu a:hover {
+        background-color: #6699CC; 
+        border-radius: 5px;
+        color: #fff; 
+    }
+nav ul .submenu a:hover {
+    background-color: #6699CC; 
+    color: #fff; 
+}
+    .search {
+        float: left;
+        display: flex;
+        align-items: center;
+        border-radius: 3px;
+    }
+
+    .search input {
+        padding: 5px;
+        margin-right: 5px;
+        border-radius: 3px;
+        border-top: none;
+    }
+
+    .search button:hover {
+        transform: translateY(-5px);
+        background-color: #6699CC;
+    }
+
+    .search button {
+        padding: 5px 10px;
+        background-color: #555;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .search button:hover {
+        transform: translateY(-10px);
+        background-color: #6699CC;
+    }
+
+    .sign-in a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 5px 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+    }
+
+    .sign-in a:hover {
+        background-color: #6699CC;
+    }
+
+    .r-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    button {
+        background-color: #003B6D;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #6699CC;
+    }
+
+
+    input:focus {
+        border: 2px solid #6699CC;
+        outline: none;
+        box-shadow: 0 0 10px rgba(102, 153, 204, 0.5);
+    }
+</style>
+
+<body>
+
+    <div class="breadcrumbs">
+        <a href="registrtration.html">Registration</a> > <span>Current Page</span>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="Pictures/logo2.png" alt="">
+            <img src="Pictures/" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html" class="active">Home <ul class="sub-menu">
+                    <ul class="submenu">
+                        <li><a href="#product1">Paradigm Pet Professionals</a></li>
+                        <li><a href="#product2">Services</a></li>
+                        <li><a href="#product3">Adoption Resources</a></li>
+                    </ul>
+                </ul></a></li>
+                <li><a href="cat.html">Cat 
+                    <ul class="submenu">
+                        <li><a href="#producta">Introduction</a></li>
+                        <li><a href="#productb">Diet</a></li>
+                    </ul>
+                </a></li>
+                <li><a href="dog.html">Dog  <ul class="submenu">
+                    <li><a href="#product11">Introduction</a></li>
+                    <li><a href="#product22">Diet & Grooming</a></li>
+                    <li><a href="#product44">Grooming & Handling</a></li>
+                    <li><a href="#product33">Vaccinations & Medications</a></li>
+                </ul></a></li>
+                <li><a href="birds.html">Birds
+                    <ul class="submenu">
+                        <li><a href="#productaa">About Birds</a></li>
+                        <li><a href="#productbb">Bird Depression
+                        </a></li>
+                    </ul>
+                </a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </div>
+        <div class="sign-in">
+            <a href="registrtration.html" class="active">contact</a>
+        </div>
+    </header>
+
+    <div class="r-form">
+        <form action="#" method="post">
+
+            <h2>Personal and Pet Information</h2>
+
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="eg. elavationedge@gmail.com">
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="02000000">
+
+            <label for="street">Address:</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="Time-zone">Time Zone:</label>
+            <input type="text" id="fname" name="fname" required placeholder="Your time zone">
+
+            <h3>Pet Details</h3>
+
+            <label for="pet-name">Pet Name</label>
+            <input type="text" id="pname" name="pname" required>
+
+            <label for="pet-name">Pet Species</label>
+            <input type="text" id="pspecies" name="pname" required>
+
+            <label for="pet-name">Pet Age</label>
+            <input type="number" id="page" name="page" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
